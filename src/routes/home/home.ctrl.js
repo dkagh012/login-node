@@ -1,6 +1,7 @@
 "use strict"
 
 
+
 const output = {
 
     home: (req, res) => {
@@ -13,7 +14,10 @@ const output = {
 
 };
 
-
+const users = {
+    id:["dkagh054"],
+    psword:["1234"]
+}
 
 const process = {
     login: (req, res) => {
