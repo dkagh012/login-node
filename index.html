@@ -1,89 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/login.css">
+    <script src="/js/home/login.js" defer ></script>
 
-    <title>오늘은 뭘 할까?</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gamja+Flower"> <!-- 웹 폰트 불러오기 -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="container">
-
-        <div class="list-box">
-            <h1>오늘의 할일</h1>
-
-            <div class="write-box">
-                <!--
-                To Do 내용을 입력해서
-                동적 추가되는 텍스트 입력창과 버튼이 있는 곳
-            -->
-                <input type="text" class="text-basic">
-
-                <button type="button" id="btnAdd">추가</button>
-            </div>
-
-            <table class="list-table">
-                <!--
-                위에서 추가한 To Do 내용이
-                동적으로 추가되는 테이블
-            -->
-
-                <colgroup>
-                    <!-- column을 1:9로 나눔 -->
-                    <col width="15%">
-                    <col width="85%">
-                </colgroup>
-
-                <thead>
-                    <tr>
-                        <!-- table row -->
-                        <!-- 제목 줄 -->
-                        <th>확인</th>
-                        <th>목록</th>
-                    </tr>
-                </thead>
-
-                <tbody id="listBody">
-                    <!-- 테이블 몸체 -->
-                    <!-- td 태그 포함 -->
-                    <tr>
-                        <td><input type="checkbox" class="btn-chk"></td>
-                        <td>끝내주게 숨쉬기</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" class="btn-chk"></td>
-                        <td>간지나게 자기</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" class="btn-chk"></td>
-                        <td>살 떨리게 운동하기</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="btn-area">
-                <!-- 삭제 기능 -->
-                <button type="button" id="DeleteSel">선택 삭제</button>
-                <button type="button" id="btnDelLast">마지막 항목 삭제</button>
-                <button type="button" id="btnDelAll">전체 삭제</button>
-            </div>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <input id="id" type="text" placeholder="아이디"/>
+            <input id="psword" type="password" placeholder="비밀번호"/>
+            <p id="button">login</p>
+            <p class="message">Not registered? <a href="/register">Create an a account</a></p>
+          </form>
         </div>
-        
-        <div id="weather" style="font-size: 2rem;">
-            <span id="weather_cloud"></span>
-            <span id="weather_C"></span>
-        </div>
-        <h2 id="clock"style="color: aliceblue;font-size: 4rem; filter: drop-shadow(3px 3px 3px #333);position: absolute;top: -6%;left: 81%;">00:00:00</h2>
-        <script src="js/background.js"></script>
-        <script type="text/JavaScript" src="./js/app.js"></script>
-        <script src="js/weather.js"></script>
-        <script src="js/clock.js"></script>
-
-    </div>
+      </div>
 </body>
-
 </html>
+
+<!-- Copyright (c) 2021 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->
